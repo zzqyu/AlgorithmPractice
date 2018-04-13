@@ -9,5 +9,10 @@
 * 동적 프로그래밍 (Dynamic Programing)
 
 #### [Floyd's Algorithm](https://github.com/zzqyu/AlgorithmPractice/blob/master/Floyd.py)
-* 플로이드 알고리즘 코드이다. 공부 중 ...
+* 플로이드 알고리즘 코드이다. 공부 중 ... 아 모르겠다.
+* 일단 동적 프로그래밍(Dynamic Programing) 소스 작성했다.
+
+
+#### [BinarySearchTree](https://github.com/zzqyu/AlgorithmPractice/blob/master/BinarySearchTree.py)
+* 바이너리서치트리최적구조 ... 좀더 공부를...
     
