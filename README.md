@@ -1,8 +1,14 @@
+<style id="jsbin-css">
+    @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+    body { font-family: 'Jeju Gothic', sans-serif;}
+</style>
+<body>
+
 # Practice programming the Algorithm using Python 3.x
 
 이 프로젝트는 3학년 1학기 전공 알고리즘을 이해하기 위해 파이썬으로 알고리즘을 짜보려고 만들었다.
 
-#### [BinomalCoefficient](https://github.com/zzqyu/AlgorithmPractice/blob/master/BinomalCoefficient.py)
+## [BinomalCoefficient](https://github.com/zzqyu/AlgorithmPractice/blob/master/BinomalCoefficient.py)
 * 이항계수 코드이다. 아래는 짜본 방식이다.
 * 재귀(Recursion)
 * 메모이제이션(Memoization)
@@ -32,7 +38,7 @@
 
 
 
-#### [Floyd's Algorithm](https://github.com/zzqyu/AlgorithmPractice/blob/master/Floyd.py)
+## [Floyd's Algorithm](https://github.com/zzqyu/AlgorithmPractice/blob/master/Floyd.py)
 * 동적 프로그래밍(Dynamic Programing) 소스 작성했다.
 * 각 점에서 다른점에 가는 모든 최단경로 구하기
 * D(k)[i][j]=세트 {V1, V2, …, Vk}의 점을 중간 경유점으로 사용하여"Vi"부터 "Vj"까지 가장 짧은 경로의 길이
@@ -48,6 +54,7 @@
 
 
 
-#### [BinarySearchTree](https://github.com/zzqyu/AlgorithmPractice/blob/master/BinarySearchTree.py)
+## [BinarySearchTree](https://github.com/zzqyu/AlgorithmPractice/blob/master/BinarySearchTree.py)
 * 바이너리서치트리최적구조 ... 좀더 공부를...
-    
+
+</body>
