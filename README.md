@@ -1,3 +1,4 @@
+<html>
 <style id="jsbin-css">
     @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
     body { font-family: 'Jeju Gothic', sans-serif;}
@@ -57,4 +58,4 @@
 ## [BinarySearchTree](https://github.com/zzqyu/AlgorithmPractice/blob/master/BinarySearchTree.py)
 * 바이너리서치트리최적구조 ... 좀더 공부를...
 
-</body>
+</body></html>
