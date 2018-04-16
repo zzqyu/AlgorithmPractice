@@ -1,8 +1,8 @@
-<html>
+<!DOCTYPE html><html><head>
 <style id="jsbin-css">
     @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
     body { font-family: 'Jeju Gothic', sans-serif;}
-</style>
+</style></head>
 <body>
 
 # Practice programming the Algorithm using Python 3.x
