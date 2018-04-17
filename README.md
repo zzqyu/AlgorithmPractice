@@ -1,10 +1,3 @@
-<!DOCTYPE html><html><head>
-<style id="jsbin-css">
-    @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
-    body { font-family: 'Jeju Gothic', sans-serif;}
-</style></head>
-<body>
-
 # Practice programming the Algorithm using Python 3.x
 
 이 프로젝트는 3학년 1학기 전공 알고리즘을 이해하기 위해 파이썬으로 알고리즘을 짜보려고 만들었다.
@@ -56,6 +49,12 @@
 
 
 ## [BinarySearchTree](https://github.com/zzqyu/AlgorithmPractice/blob/master/BinarySearchTree.py)
-* 바이너리서치트리최적구조 ... 좀더 공부를...
+* 동적 프로그래밍(Dynamic Programing) 소스 작성했다.
+* 개념
+    * A[i][j]의 의미는 Key_i부터 Key_j 까지로 구성되어있는 BST에서 최적이진트리의 평균 탐색 시간이다.
+    * #### A의 재귀 관계 및 성질
+        * A[i][j] = min(A[i][k-1], A[k+1][j]) + sum(P, i, j)<br>
+        // sum(P, i, j)의 의미는 Key_m의 확률을 P_m이라고 할때, i부터 j까지의 확률 합을 말함.
+        * A[i][i] = P_i
+        * A[i][i-1] = 0
 
-</body></html>
