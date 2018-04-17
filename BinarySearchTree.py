@@ -1,5 +1,25 @@
 #실행 테스트케이스 참고 사이트: http://cometouniverse.tistory.com/m/43
 #알고리즘은 강의자료 토대로 짬
+class BSTree:
+    def __init__(self, data=None, left = None, right = None):
+        self.left = left
+        self.right = right
+        self.data = data
+    def getLeft(self):
+        return self.left
+    def getRight(self):
+        return self.right
+    def setData(self, data):
+        self.data = data;
+    def getData(self):
+        return self.data
+    def TPrint(self, d=0, preD=0):
+        if self.right != None:
+            self.right.TPrint(d+1, preD)
+        print(" "*d*4, self.data)
+        if self.left != None:
+            self.left.TPrint(d+1, preD)
+
 def optimalBST(bstSize, keyP):
     #초기화 시작
     i, j ,k , diagonal = 0, 0, 0, 0
@@ -46,13 +66,24 @@ def sumP(keyP, i, j):
     for m in range(i, j+1):
         answer += keyP[m]
     return answer
-        
-                  
+
+def setBST(i, j, R, keyList):
+    routeIndex = R[i][j]
+    if routeIndex == 0 :
+        return None
+    else:
+        BST = BSTree() 
+        BST.data = keyList[routeIndex]
+        BST.left = setBST(i, routeIndex-1, R, keyList )              
+        BST.right = setBST(routeIndex+1, j, R, keyList )
+        return BST              
 
 
 ##테스트코드
 if __name__ == "__main__" :
+    K = [None, 1,2,3,4,5]
     P = [0 , 3.0/16, 4.0/16, 5.0/16, 3.0/16, 1.0/16]
+    BSTLIST = [[None]*(5+1) for i in range(5+2)] 
     result = optimalBST(5, P)
     A = result[0]
     R = result[1]
@@ -62,6 +93,14 @@ if __name__ == "__main__" :
     for i in range(1, 6):
         for j in range(i, 6):
             print("R[%d][%d] = %d" % (i, j, R[i][j]))
+            BSTLIST[i][j] = setBST(i, j, R, K)
+
+    for i in range(1, 6):
+        for j in range(i, 6):
+            print("BTS[%d][%d]" % (i, j))
+            BSTLIST[i][j].TPrint()
+
+    
 
 '''실행결과
 P_1, P_2, P_3, P_4, P_5 = 3/16, 4/16, 5/16, 3/16, 1/16
